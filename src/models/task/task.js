@@ -1,4 +1,4 @@
-import { isValidDate, isValidTime, combineDateTime } from "../../utilities/date-validator";
+import { isValidDate, isValidTime, combineDateTime } from "../validator/validator";
 
 const TAG_STRING_SEPARATOR = ",";
 const CLASSNAME = "Task";

@@ -3,20 +3,21 @@ import "./style.css";
 import { Controller } from "./controller/controller";
 
 const controller = new Controller();
+const modelPM = controller.model.projectManager;
 
-controller.model.projectModel.removeProject("");
+modelPM.removeProject("");
 
-controller.model.projectModel.addProject("Billing", "This is for billing purpose", "");
-controller.model.projectModel.addProject("Grocery Shopping", "This is for grocery shopping purpose", "");
-controller.model.projectModel.addProject("", "", "Cool");
-controller.model.projectModel.addProject("", "", "Unnamed");
-controller.model.projectModel.addProject("", "", "Unnamed");
+modelPM.addProject("Billing", "This is for billing purpose", "");
+modelPM.addProject("Grocery Shopping", "This is for grocery shopping purpose", "");
+modelPM.addProject("", "", "Cool");
+modelPM.addProject("", "", "Unnamed");
+modelPM.addProject("", "", "Unnamed");
 
-controller.model.projectModel.removeProject("P000002");
+modelPM.removeProject("P-000002");
 
-controller.model.projectModel.addProject("test again", "", "Test");
-controller.model.projectModel.addProject("another test", "", "Test");
+modelPM.addProject("test again", "", "Test");
+modelPM.addProject("another test", "", "Test");
 
-controller.model.projectModel.removeProject("P000006");
+modelPM.removeProject("P-000006");
 
-console.log(controller.model.projectModel.getAllProjects());
+console.log(modelPM.getAllProjects());

@@ -1,7 +1,7 @@
 const DEFAULT_PROJECT_CATEGORY = "General";
 const CLASSNAME = "ProjectCategoryM";
 
-class ProjectCategoryModel {
+class ProjectCategoryManager {
     #logger
     #categories;
 
@@ -49,4 +49,4 @@ class ProjectCategoryModel {
     }
 }
 
-export { DEFAULT_PROJECT_CATEGORY, ProjectCategoryModel };
+export { DEFAULT_PROJECT_CATEGORY, ProjectCategoryManager };

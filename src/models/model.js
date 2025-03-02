@@ -1,15 +1,15 @@
-import { ProjectModel } from "./project/project";
+import { ProjectManager } from "./project/project-manager";
 
 class Model {
-    #projectModel; 
+    #projectManager; 
     #logger;
 
     constructor (logger) {
-        this.#projectModel = new ProjectModel(logger);
+        this.#projectManager = new ProjectManager(logger);
     }
 
-    get projectModel() {
-        return this.#projectModel;
+    get projectManager() {
+        return this.#projectManager;
     }
 }
 
